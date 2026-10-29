@@ -85,7 +85,7 @@ async function bootApp() {
   progress(0.84, '正在植桃柳、种荷、放鹤…');
   await frameBreak();
 
-  const vegetation = createVegetation(scene, data, terrain, quality);
+  const vegetation = createVegetation(app.scene, data, terrain, quality);
   app.vegetation = vegetation;
   const atmosphere = createAtmosphere(app.scene, app);
   app.atmosphere = atmosphere;
