@@ -304,7 +304,7 @@ export function createVegetation(scene, data, terrain, quality = 'high') {
       new B.Vector3(x, 0.8, z)
     ));
   }
-  const reedMesh = bakeInstances(scene, reedMaster, reedMatrices, 'reeds', mats reed);
+  const reedMesh = bakeInstances(scene, reedMaster, reedMatrices, 'reeds', mats.reed);
   if (reedMesh) reedMesh.parent = root;
   reedMaster.dispose();
 
