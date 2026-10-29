@@ -161,7 +161,7 @@ button:focus-visible,input:focus-visible{outline:1px solid var(--gold);outline-o
 .time-play[aria-pressed="true"]{background:var(--gold);color:#101612;}
 
 /* 控制面板 */
-.control-panel{position:absolute;right:32px;top:426px;width:218px;background:rgba(5,10,9,.48);border:1px solid rgba(233,224,202,.07);backdrop-filter:blur(14px);transition:.35s;overflow:hidden;}
+.control-panel{position:absolute;right:260px;top:110px;width:218px;background:rgba(5,10,9,.48);border:1px solid rgba(233,224,202,.07);backdrop-filter:blur(14px);transition:.35s;overflow:hidden;}
 .control-panel.is-collapsed{width:40px;height:40px;border-radius:50%;background:rgba(5,10,9,.62);}
 .control-panel.is-collapsed .panel-body{opacity:0;pointer-events:none;}
 .panel-toggle{position:absolute;right:5px;top:5px;width:30px;height:30px;display:grid;place-items:center;color:rgba(233,224,202,.4);z-index:2;}
@@ -278,7 +278,7 @@ kbd{padding:2px 5px;border:1px solid rgba(233,224,202,.18);font-family:var(--san
 /* 响应式 */
 @media (max-width:1180px){
   .scene-index{width:196px;right:20px;}
-  .control-panel{right:20px;top:400px;width:200px;}
+  .control-panel{right:230px;top:110px;width:200px;}
   .poem-panel{left:24px;}
   .caption{left:24px;width:300px;}
 }
