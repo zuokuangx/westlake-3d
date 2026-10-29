@@ -12,7 +12,7 @@ import { createUI } from './ui/ui.js';
 import { VIEWS, VIEW_ORDER } from './core/contract.js';
 
 const params = new URLSearchParams(location.search);
-const quality = params.get('q') || 'high';
+const quality = params.get('q') || 'medium';
 const startTime = params.has('t') ? Number(params.get('t')) : 0.72;
 const startView = params.get('view') || 'hero';
 const still = Number(params.get('still') || 0);
@@ -85,7 +85,7 @@ async function bootApp() {
   progress(0.84, '正在植桃柳、种荷、放鹤…');
   await frameBreak();
 
-  const vegetation = createVegetation(app.scene, data, terrain, quality);
+  const vegetation = createVegetation(scene, data, terrain, quality);
   app.vegetation = vegetation;
   const atmosphere = createAtmosphere(app.scene, app);
   app.atmosphere = atmosphere;
